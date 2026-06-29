@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 
 def main() -> None:
     load_dotenv(".env")
-    parser = argparse.ArgumentParser(prog="python -m kitchen_chan.tts")
-    parser.add_argument("--input", type=Path, default=Path("data/tetris_voice_lines.json"))
+    parser = argparse.ArgumentParser(prog="python -m deskchan.tts")
+    parser.add_argument("--input", type=Path, default=Path("data/desk_voice_lines.json"))
     parser.add_argument("--out", type=Path, default=Path("public/audio"))
     parser.add_argument("--model", default=os.getenv("GEMINI_TTS_MODEL", "gemini-3.1-flash-tts-preview"))
     parser.add_argument("--voice", default="Puck")

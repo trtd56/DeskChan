@@ -1,6 +1,6 @@
 # StackChan HTTP Bridge Firmware
 
-This firmware replaces the current StackChan firmware with a minimal HTTP bridge for the hackathon demo.
+This firmware replaces the current StackChan firmware with a minimal HTTP bridge for DeskChan.
 
 ## What It Does
 
@@ -8,7 +8,7 @@ This firmware replaces the current StackChan firmware with a minimal HTTP bridge
 - Exposes `GET /health`.
 - Exposes `POST /action`.
 - Exposes `POST /face`, compatible with the StackChan manzai firmware style in `../stack_reachy`.
-- Shows the received expression on the CoreS3 display and keeps the latest Tetris action state.
+- Shows the received expression on the CoreS3 display and keeps the latest DeskChan action state.
 - Plays the provided WAV audio URL. If the WAV cannot be fetched, it stays silent by default.
 - Probes the audio URL when `audio.url` is provided, or when `audio.path` is provided with `AUDIO_BASE_URL`.
 
@@ -36,7 +36,7 @@ Edit `include/wifi_config.h`:
 Use a 2.4GHz SSID. ESP32-S3 does not connect to 6GHz Wi-Fi.
 
 `AUDIO_BASE_URL` is only a fallback. The Python sender can also include an absolute
-`audio.url` by setting `TETRIS_CHAN_AUDIO_BASE_URL`. Keep the bridge bound to
+`audio.url` by setting `DESKCHAN_AUDIO_BASE_URL`. Keep the bridge bound to
 `0.0.0.0`, not `127.0.0.1`, so StackChan can fetch the WAV from your Mac LAN IP.
 
 ## Build
@@ -64,8 +64,8 @@ pio device monitor --port /dev/cu.usbmodem1101 --baud 115200
 From the project root:
 
 ```bash
-export TETRIS_CHAN_AUDIO_BASE_URL=http://192.168.0.10:8787
-PYTHONPATH=src python3 -m kitchen_chan.cli device send "右端井戸が空いていて、Iミノ待ち。短く実況して" \
+export DESKCHAN_AUDIO_BASE_URL=http://192.168.0.10:8787
+PYTHONPATH=src python3 -m deskchan.cli device send "マグカップがPCの近くにある。短く注意して" \
   --provider mock \
   --transport http \
   --url http://192.168.11.15/action

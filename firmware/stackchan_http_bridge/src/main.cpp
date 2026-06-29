@@ -53,10 +53,10 @@ namespace {
 
 WebServer server(80);
 String lastActionJson = "{}";
-String lastText = "TetrisChan ready";
+String lastText = "DeskChan ready";
 String lastExpression = "neutral";
 String lastAudioKey = "";
-String lastGamePhase = "unknown";
+String lastDeskPhase = "unknown";
 uint8_t* audioBuffer = nullptr;
 size_t audioBufferLength = 0;
 bool isSpeaking = false;
@@ -479,7 +479,7 @@ void handleAction() {
   lastActionJson = body;
   const char* text = doc["text"] | "";
   const char* safety = doc["safety_level"] | "ok";
-  const char* gamePhase = doc["game_phase"] | "unknown";
+  const char* deskPhase = doc["desk_phase"] | "unknown";
   const char* expression = doc["expression"] | "neutral";
   const char* motion = doc["motion"] | "none";
   int intensity = doc["intensity"] | 1;
@@ -489,7 +489,7 @@ void handleAction() {
   String audioUrl = resolveAudioUrl(audio);
 
   lastText = text;
-  lastGamePhase = gamePhase;
+  lastDeskPhase = deskPhase;
   lastAudioKey = audioKey;
   lastExpression = expressionToReachyFace(String(expression), String(safety), lastAudioKey);
   if (doc["face"].is<const char*>()) {
@@ -516,7 +516,7 @@ void handleAction() {
   res["ok"] = true;
   res["ip"] = WiFi.localIP().toString();
   res["received"]["text"] = lastText;
-  res["received"]["game_phase"] = lastGamePhase;
+  res["received"]["desk_phase"] = lastDeskPhase;
   res["received"]["safety_level"] = safety;
   res["received"]["expression"] = expression;
   res["received"]["face"] = lastExpression;
@@ -630,7 +630,7 @@ void handleLastAction() {
   res["ip"] = WiFi.localIP().toString();
   res["action_json"] = lastActionJson;
   res["text"] = lastText;
-  res["game_phase"] = lastGamePhase;
+  res["desk_phase"] = lastDeskPhase;
   res["expression"] = lastExpression;
   res["audio_key"] = lastAudioKey;
   replyJson(200, res);
@@ -659,10 +659,10 @@ void connectWiFi() {
 
   if (strlen(WIFI_SSID) == 0) {
     WiFi.mode(WIFI_AP);
-    WiFi.softAP("TetrisChan-Setup");
-    Serial.println("WIFI_SSID is empty. Started AP: TetrisChan-Setup");
+    WiFi.softAP("DeskChan-Setup");
+    Serial.println("WIFI_SSID is empty. Started AP: DeskChan-Setup");
     lastExpression = "retort";
-    lastText = "WiFi config missing. AP: TetrisChan-Setup";
+    lastText = "WiFi config missing. AP: DeskChan-Setup";
     lastAudioKey = "";
     redrawDisplay();
     return;
@@ -692,10 +692,10 @@ void connectWiFi() {
   }
 
   WiFi.mode(WIFI_AP);
-  WiFi.softAP("TetrisChan-Setup");
-  Serial.println("WiFi failed. Started AP: TetrisChan-Setup");
+  WiFi.softAP("DeskChan-Setup");
+  Serial.println("WiFi failed. Started AP: DeskChan-Setup");
   lastExpression = "retort";
-  lastText = "WiFi failed. AP: TetrisChan-Setup";
+  lastText = "WiFi failed. AP: DeskChan-Setup";
   lastAudioKey = "";
   redrawDisplay();
 }
@@ -713,7 +713,7 @@ void setup() {
   cameraReady = CoreS3.Camera.begin();
   Serial.printf("Camera init: %s\n", cameraReady ? "ok" : "failed");
 
-  Serial.println("TetrisChan StackChan HTTP bridge booting");
+  Serial.println("DeskChan StackChan HTTP bridge booting");
   connectWiFi();
 
   server.on("/health", HTTP_GET, []() { replyOk("healthy"); });

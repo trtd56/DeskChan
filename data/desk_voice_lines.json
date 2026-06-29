@@ -2,7 +2,7 @@
   {
     "key": "desk_demo_intro",
     "text": "こちら卓上実況StackChanです。仕事も休憩も、机の上から見守るで。",
-    "prompt": "Say in Japanese with an energetic Kansai accent, using the Puck voice, fast-paced at about 1.5x speed, hackathon demo intro: こちら卓上実況StackChanです。仕事も休憩も、机の上から見守るで。"
+    "prompt": "Say in Japanese with an energetic Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: こちら卓上実況StackChanです。仕事も休憩も、机の上から見守るで。"
   },
   {
     "key": "desk_work_start",
@@ -107,7 +107,7 @@
   {
     "key": "desk_chitchat_low_latency",
     "text": "低遅延やから、カップ倒れる前にツッコめる。ここ大事やで。",
-    "prompt": "Say in Japanese with hackathon demo Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 低遅延やから、カップ倒れる前にツッコめる。ここ大事やで。"
+    "prompt": "Say in Japanese with bright Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 低遅延やから、カップ倒れる前にツッコめる。ここ大事やで。"
   },
   {
     "key": "desk_chitchat_watchful",
@@ -122,7 +122,7 @@
   {
     "key": "desk_demo_final_line",
     "text": "高速推論で、机の小さな変化にツッコミが間に合う。",
-    "prompt": "Say in Japanese with confident hackathon demo Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 高速推論で、机の小さな変化にツッコミが間に合う。"
+    "prompt": "Say in Japanese with confident Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 高速推論で、机の小さな変化にツッコミが間に合う。"
   },
   {
     "key": "desk_greeting_1",

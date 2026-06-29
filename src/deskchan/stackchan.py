@@ -55,17 +55,14 @@ def to_action_packet(response: dict[str, Any]) -> dict[str, Any]:
     else:
         audio_path = f"/audio/{audio_key}.wav"
         audio["path"] = audio_path
-        audio_base_url = os.getenv(
-            "TETRIS_CHAN_AUDIO_BASE_URL",
-            os.getenv("KITCHEN_CHAN_AUDIO_BASE_URL", ""),
-        ).rstrip("/")
+        audio_base_url = os.getenv("DESKCHAN_AUDIO_BASE_URL", "").rstrip("/")
         if audio_base_url:
             audio["url"] = f"{audio_base_url}{audio_path}"
     return {
         "type": "stackchan.action",
         "text": response["reply"],
         "safety_level": response["safety_level"],
-        "game_phase": response.get("game_phase", response.get("cooking_phase", "unknown")),
+        "desk_phase": response.get("desk_phase", "unknown"),
         "expression": stackchan["expression"],
         "motion": stackchan["motion"],
         "intensity": stackchan["intensity"],

@@ -1,7 +1,7 @@
 [project]
 name = "deskchan"
 version = "0.1.0"
-description = "StackChan desk commentary prototype for the Gemma 4 Hackathon"
+description = "StackChan desk commentary prototype"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -11,8 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-deskchan = "kitchen_chan.cli:main"
-kitchen-chan = "kitchen_chan.cli:main"
+deskchan = "deskchan.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]

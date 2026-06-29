@@ -24,18 +24,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(prog="deskchan")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    turn = subparsers.add_parser("turn", help="Run one commentary turn.")
-    turn.add_argument("text", help="Current scene situation or user question.")
-    turn.add_argument("--scene", choices=["desk", "tetris"], default="desk")
+    turn = subparsers.add_parser("turn", help="Run one desk commentary turn.")
+    turn.add_argument("text", help="Current desk situation or user question.")
     turn.add_argument("--provider", default="mock", help="mock, gemini, or cerebras.")
-    turn.add_argument("--image", type=Path, help="Optional scene image for Gemini.")
+    turn.add_argument("--image", type=Path, help="Optional desk image.")
     turn.add_argument("--stackchan-camera-url", help="Capture /capture.jpg from StackChan and use it as image input.")
     turn.add_argument("--capture-dir", type=Path, default=Path("artifacts/captures"))
     turn.add_argument("--stackchan-url", help="Optional HTTP endpoint that accepts action JSON.")
 
     compare = subparsers.add_parser("compare", help="Compare two providers on one prompt.")
-    compare.add_argument("text", help="Current scene situation or user question.")
-    compare.add_argument("--scene", choices=["desk", "tetris"], default="desk")
+    compare.add_argument("text", help="Current desk situation or user question.")
     compare.add_argument("--left", default="gemini")
     compare.add_argument("--right", default="cerebras")
 
@@ -53,8 +51,7 @@ def main() -> None:
     serial_read.add_argument("--seconds", type=float, default=5.0)
 
     send = device_subparsers.add_parser("send", help="Generate one action and send it to StackChan.")
-    send.add_argument("text", help="Current scene situation or user question.")
-    send.add_argument("--scene", choices=["desk", "tetris"], default="desk")
+    send.add_argument("text", help="Current desk situation or user question.")
     send.add_argument("--provider", default="mock", help="mock, gemini, or cerebras.")
     send.add_argument("--transport", choices=["print", "http", "serial"], default="print")
     send.add_argument("--url", default="http://192.168.11.15/action")
@@ -73,7 +70,7 @@ def main() -> None:
         image_path = args.image
         if args.stackchan_camera_url:
             image_path = capture_snapshot(args.stackchan_camera_url, args.capture_dir)
-        result = get_provider(args.provider).complete(args.text, image_path, scene=args.scene)
+        result = get_provider(args.provider).complete(args.text, image_path)
         payload = result.__dict__
         if image_path:
             payload["image_path"] = str(image_path)
@@ -82,8 +79,8 @@ def main() -> None:
             payload["stackchan_post"] = post_action(args.stackchan_url, payload["stackchan_packet"])
         print(_json(payload))
     elif args.command == "compare":
-        left = get_provider(args.left).complete(args.text, scene=args.scene)
-        right = get_provider(args.right).complete(args.text, scene=args.scene)
+        left = get_provider(args.left).complete(args.text)
+        right = get_provider(args.right).complete(args.text)
         print(
             _json(
                 {
@@ -102,7 +99,7 @@ def main() -> None:
             output = read_serial(args.port, baud=args.baud, seconds=args.seconds)
             print(output if output else "(no serial output)")
         elif args.device_command == "send":
-            result = get_provider(args.provider).complete(args.text, scene=args.scene)
+            result = get_provider(args.provider).complete(args.text)
             packet = to_action_packet(result.data)
             payload: dict[str, Any] = {
                 "provider": result.provider,

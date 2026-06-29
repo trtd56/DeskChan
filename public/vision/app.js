@@ -3,7 +3,6 @@ const viewerState = document.querySelector("#viewerState");
 const statusText = document.querySelector("#status");
 const stackchanUrl = document.querySelector("#stackchanUrl");
 const audioBaseUrl = document.querySelector("#audioBaseUrl");
-const sceneSelect = document.querySelector("#scene");
 const providerSelect = document.querySelector("#provider");
 const promptInput = document.querySelector("#prompt");
 const sendToStackChan = document.querySelector("#sendToStackChan");
@@ -49,12 +48,8 @@ let frameRefreshTimer = null;
 
 const stackchanStillnessBufferMs = 800;
 
-const defaultPrompts = {
-  desk:
-    "StackChanのカメラ画像を見て、卓上作業の実況として次の一言を返して。手元、キーボード、PC、マグカップ、スマホ、姿勢、離席、照明、散らかり具合を読む。カップが端やPCに近い時、手の通り道にある時、暗い時は短く注意する。同じ認識結果が続く時は同じ発話を避ける。スマホ継続だけは「スマホ長すぎ」に切り替え、それ以外の連続状態は雑談にする。",
-  tetris:
-    "StackChanのカメラ画像を見て、テトリス盤面の実況として次の一言を返して。盤面、現在ミノ、ゴースト、ホールド、ネクスト、井戸、積み上がり、ライン消し、おじゃま、トップアウトを読む。読める時だけ具体的に、ホールド、回転、左右移動、ソフトドロップ、ハードドロップ、井戸を空ける、平積み、復旧、Tetris、T-spin、コンボなどの短い助言を出す。画面が暗い、ブレている、盤面が切れている場合は断定せず撮影調整を促す。同じ状況が続く時は同じ発話を避け、短い実況や雑談も挟む。",
-};
+const defaultPrompt =
+  "StackChanのカメラ画像を見て、卓上作業の一言を返して。手元、キーボード、PC、マグカップ、スマホ、姿勢、離席、照明、散らかり具合を読む。カップが端やPCに近い時、手の通り道にある時、暗い時は短く注意する。同じ認識結果が続く時は同じ発話を避ける。スマホ継続だけは「スマホ長すぎ」に切り替え、それ以外の連続状態は見守る。";
 
 function cameraUrl() {
   const base = stackchanUrl.value.trim() || "http://192.168.11.15";
@@ -109,7 +104,7 @@ function renderHistory(items) {
   for (const item of [...items].reverse()) {
     const li = document.createElement("li");
     li.innerHTML = `
-      <div><strong>${item.time}</strong> ${item.game_phase} / ${item.safety_level}</div>
+      <div><strong>${item.time}</strong> ${item.desk_phase} / ${item.safety_level}</div>
       <p>${item.reply}</p>
       <span>${item.audio_key}</span>
     `;
@@ -121,7 +116,7 @@ function renderResultPayload(payload) {
   jsonOutput.textContent = JSON.stringify(payload, null, 2);
   const data = payload.data;
   reply.textContent = data.reply;
-  phase.textContent = data.game_phase;
+  phase.textContent = data.desk_phase;
   safety.textContent = data.safety_level;
   audioKey.textContent = data.stackchan.audio_key;
   latency.textContent = `${payload.latency_ms}ms`;
@@ -331,7 +326,6 @@ async function runAnalysis({ auto = false } = {}) {
       signal: abortController?.signal,
       body: JSON.stringify({
         provider: providerSelect.value,
-        scene: sceneSelect.value,
         stackchan_url: stackchanUrl.value.trim(),
         stackchan_action_url: `${stackchanUrl.value.trim().replace(/\/$/, "")}/action`,
         audio_base_url: audioBaseUrl.value.trim(),
@@ -547,20 +541,11 @@ autoInterval.addEventListener("change", () => {
   startAutoDemo();
 });
 
-sceneSelect.addEventListener("change", () => {
-  promptInput.value = defaultPrompts[sceneSelect.value] || defaultPrompts.desk;
-  resetHistoryButton.click();
-  reply.textContent = "認識結果がここに出ます。";
-  phase.textContent = "-";
-  safety.textContent = "-";
-  audioKey.textContent = "-";
-  latency.textContent = "-";
-});
-
 loadHistory();
 loadDemoStates();
 renderDemoControls();
 renderScriptControls();
+promptInput.value = promptInput.value.trim() || defaultPrompt;
 refreshFrame();
 setInterval(refreshFrame, 750);
 
