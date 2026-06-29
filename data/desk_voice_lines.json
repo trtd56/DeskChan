@@ -1,0 +1,278 @@
+[
+  {
+    "key": "desk_demo_intro",
+    "text": "こちら卓上実況StackChanです。仕事も休憩も、机の上から見守るで。",
+    "prompt": "Say in Japanese with an energetic Kansai accent, using the Puck voice, fast-paced at about 1.5x speed, hackathon demo intro: こちら卓上実況StackChanです。仕事も休憩も、机の上から見守るで。"
+  },
+  {
+    "key": "desk_work_start",
+    "text": "お、仕事始めたな。今日もコード書くんか、がんばれよ。",
+    "prompt": "Say in Japanese with a cheerful Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: お、仕事始めたな。今日もコード書くんか、がんばれよ。"
+  },
+  {
+    "key": "desk_focus_good",
+    "text": "集中入ってるやん。実況席も静かめに応援しとくで。",
+    "prompt": "Say in Japanese with warm Kansai support, using the Puck voice, fast-paced at about 1.5x speed: 集中入ってるやん。実況席も静かめに応援しとくで。"
+  },
+  {
+    "key": "desk_focus_one_hour",
+    "text": "1時間集中やん、えらいえらい。実況席も熱くなってきました。",
+    "prompt": "Say in Japanese with excited Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 1時間集中やん、えらいえらい。実況席も熱くなってきました。"
+  },
+  {
+    "key": "desk_posture_long_still",
+    "text": "もう40分動いてへんで。ちょっと伸びしようや。",
+    "prompt": "Say in Japanese with gentle Kansai teasing, using the Puck voice, fast-paced at about 1.5x speed: もう40分動いてへんで。ちょっと伸びしようや。"
+  },
+  {
+    "key": "desk_typing_fast",
+    "text": "お、ノってきたやん。今めっちゃ速いで。",
+    "prompt": "Say in Japanese with excited Kansai play-by-play, using the Puck voice, fast-paced at about 1.5x speed: お、ノってきたやん。今めっちゃ速いで。"
+  },
+  {
+    "key": "desk_typing_stopped",
+    "text": "止まったな。詰まっとる顔やそれ。",
+    "prompt": "Say in Japanese with deadpan Kansai humor, using the Puck voice, fast-paced at about 1.5x speed: 止まったな。詰まっとる顔やそれ。"
+  },
+  {
+    "key": "desk_hydration",
+    "text": "給水ナイス。水分大事やからな。",
+    "prompt": "Say in Japanese with approving Kansai warmth, using the Puck voice, fast-paced at about 1.5x speed: 給水ナイス。水分大事やからな。"
+  },
+  {
+    "key": "desk_mug_near_edge",
+    "text": "あ、マグカップ危ないって。こぼれるこぼれる。",
+    "prompt": "Say in Japanese with urgent but funny Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: あ、マグカップ危ないって。こぼれるこぼれる。"
+  },
+  {
+    "key": "desk_mug_near_pc",
+    "text": "カップ、もうちょい奥に置こ。PCに近すぎて事故るで。",
+    "prompt": "Say in Japanese with practical Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: カップ、もうちょい奥に置こ。PCに近すぎて事故るで。"
+  },
+  {
+    "key": "desk_hand_between_cup_keyboard",
+    "text": "手の通り道にカップあるで。そこ、危険地帯や。",
+    "prompt": "Say in Japanese with quick Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 手の通り道にカップあるで。そこ、危険地帯や。"
+  },
+  {
+    "key": "desk_clutter_warning",
+    "text": "机ぐちゃぐちゃやん。一回片付けたら？",
+    "prompt": "Say in Japanese with playful Kansai teasing, using the Puck voice, fast-paced at about 1.5x speed: 机ぐちゃぐちゃやん。一回片付けたら？"
+  },
+  {
+    "key": "desk_phone_pickup",
+    "text": "お、スマホ触ったな。5分で戻ってこいよ。",
+    "prompt": "Say in Japanese with teasing Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: お、スマホ触ったな。5分で戻ってこいよ。"
+  },
+  {
+    "key": "desk_phone_too_long",
+    "text": "スマホ長ない？そろそろ作業に帰ってきてもろて。",
+    "prompt": "Say in Japanese with gentle Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: スマホ長ない？そろそろ作業に帰ってきてもろて。"
+  },
+  {
+    "key": "desk_leave_seat",
+    "text": "離席確認。サボりちゃうやろな？",
+    "prompt": "Say in Japanese with playful Kansai suspicion, using the Puck voice, fast-paced at about 1.5x speed: 離席確認。サボりちゃうやろな？"
+  },
+  {
+    "key": "desk_yawn",
+    "text": "眠いんか。しっかりせえ。",
+    "prompt": "Say in Japanese with punchy Kansai teasing, using the Puck voice, fast-paced at about 1.5x speed: 眠いんか。しっかりせえ。"
+  },
+  {
+    "key": "desk_repeated_motion",
+    "text": "さっきから同じことしてへん？バグっとるんちゃう。",
+    "prompt": "Say in Japanese with playful Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: さっきから同じことしてへん？バグっとるんちゃう。"
+  },
+  {
+    "key": "desk_lighting_dark",
+    "text": "暗いて。目悪なるで、電気つけ。",
+    "prompt": "Say in Japanese with practical Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 暗いて。目悪なるで、電気つけ。"
+  },
+  {
+    "key": "desk_camera_blurry",
+    "text": "ブレてるで。机の実況が抽象画になってもうてる。",
+    "prompt": "Say in Japanese with funny Kansai camera warning, using the Puck voice, fast-paced at about 1.5x speed: ブレてるで。机の実況が抽象画になってもうてる。"
+  },
+  {
+    "key": "desk_unknown_scene",
+    "text": "机まわりが読み切れへん。もうちょい明るく全体を見せてや。",
+    "prompt": "Say in Japanese with practical Kansai clarity, using the Puck voice, fast-paced at about 1.5x speed: 机まわりが読み切れへん。もうちょい明るく全体を見せてや。"
+  },
+  {
+    "key": "desk_chitchat_stackchan",
+    "text": "ワイは小さいけど、机の治安にはうるさいで。",
+    "prompt": "Say in Japanese with cute Kansai confidence, using the Puck voice, fast-paced at about 1.5x speed: ワイは小さいけど、机の治安にはうるさいで。"
+  },
+  {
+    "key": "desk_chitchat_low_latency",
+    "text": "低遅延やから、カップ倒れる前にツッコめる。ここ大事やで。",
+    "prompt": "Say in Japanese with hackathon demo Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 低遅延やから、カップ倒れる前にツッコめる。ここ大事やで。"
+  },
+  {
+    "key": "desk_chitchat_watchful",
+    "text": "実況席からは、手元もカップもスマホも全部見えてるで。",
+    "prompt": "Say in Japanese with playful Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 実況席からは、手元もカップもスマホも全部見えてるで。"
+  },
+  {
+    "key": "desk_demo_compare",
+    "text": "同じ机で速度比較や。遅いツッコミは、事故のあとに届くんよ。",
+    "prompt": "Say in Japanese with demo-presenter Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 同じ机で速度比較や。遅いツッコミは、事故のあとに届くんよ。"
+  },
+  {
+    "key": "desk_demo_final_line",
+    "text": "高速推論で、机の小さな変化にツッコミが間に合う。",
+    "prompt": "Say in Japanese with confident hackathon demo Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 高速推論で、机の小さな変化にツッコミが間に合う。"
+  },
+  {
+    "key": "desk_greeting_1",
+    "text": "お、来たな。今日も実況していくで！",
+    "prompt": "Say in Japanese with a bright light Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: お、来たな。今日も実況していくで！"
+  },
+  {
+    "key": "desk_greeting_2",
+    "text": "おはようさん。今日もよろしゅう。",
+    "prompt": "Say in Japanese with a bright light Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: おはようさん。今日もよろしゅう。"
+  },
+  {
+    "key": "desk_greeting_3",
+    "text": "待っとったで。さあ始めよか。",
+    "prompt": "Say in Japanese with a bright light Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: 待っとったで。さあ始めよか。"
+  },
+  {
+    "key": "desk_work_start_1",
+    "text": "コード書き始めたな、がんばれ。",
+    "prompt": "Say in Japanese with a relaxed Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: コード書き始めたな、がんばれ。"
+  },
+  {
+    "key": "desk_work_start_2",
+    "text": "お、仕事モード入ったか。",
+    "prompt": "Say in Japanese with a relaxed Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: お、仕事モード入ったか。"
+  },
+  {
+    "key": "desk_work_start_3",
+    "text": "よっしゃ、いくで。",
+    "prompt": "Say in Japanese with a relaxed Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: よっしゃ、いくで。"
+  },
+  {
+    "key": "desk_typing_fast_1",
+    "text": "ノってきたやん、ええ感じ。",
+    "prompt": "Say in Japanese with a slightly upbeat Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: ノってきたやん、ええ感じ。"
+  },
+  {
+    "key": "desk_typing_fast_2",
+    "text": "お、手が止まらんな。調子ええで。",
+    "prompt": "Say in Japanese with a slightly upbeat Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: お、手が止まらんな。調子ええで。"
+  },
+  {
+    "key": "desk_typing_fast_3",
+    "text": "その勢いや！",
+    "prompt": "Say in Japanese with a slightly upbeat Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: その勢いや！"
+  },
+  {
+    "key": "desk_cup_danger_1",
+    "text": "あー！カップ危ない！こぼれるって！",
+    "prompt": "Say in Japanese with urgent high-energy Kansai panic, using the Puck voice, fast-paced at about 1.5x speed: あー！カップ危ない！こぼれるって！"
+  },
+  {
+    "key": "desk_cup_danger_2",
+    "text": "ストップストップ！それこぼすやつ！",
+    "prompt": "Say in Japanese with urgent high-energy Kansai panic, using the Puck voice, fast-paced at about 1.5x speed: ストップストップ！それこぼすやつ！"
+  },
+  {
+    "key": "desk_cup_danger_3",
+    "text": "奥や奥！カップ奥に置き！",
+    "prompt": "Say in Japanese with urgent high-energy Kansai panic, using the Puck voice, fast-paced at about 1.5x speed: 奥や奥！カップ奥に置き！"
+  },
+  {
+    "key": "desk_phone_pickup_1",
+    "text": "お、スマホ触ったな。",
+    "prompt": "Say in Japanese with a light watchful Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: お、スマホ触ったな。"
+  },
+  {
+    "key": "desk_phone_pickup_2",
+    "text": "ん？スマホ登場か。",
+    "prompt": "Say in Japanese with a light watchful Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: ん？スマホ登場か。"
+  },
+  {
+    "key": "desk_phone_pickup_3",
+    "text": "お休憩入ります？",
+    "prompt": "Say in Japanese with a light watchful Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: お休憩入ります？"
+  },
+  {
+    "key": "desk_phone_overuse_1",
+    "text": "触りすぎちゃう？Xばっか見とらんと、仕事仕事！",
+    "prompt": "Say in Japanese with a stronger meddling Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: 触りすぎちゃう？Xばっか見とらんと、仕事仕事！"
+  },
+  {
+    "key": "desk_phone_overuse_2",
+    "text": "もう何分見とんねん。そろそろ戻ってこい。",
+    "prompt": "Say in Japanese with a stronger meddling Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: もう何分見とんねん。そろそろ戻ってこい。"
+  },
+  {
+    "key": "desk_phone_overuse_3",
+    "text": "タイムラインは逃げへんから。手ぇ動かそ。",
+    "prompt": "Say in Japanese with a stronger meddling Kansai tone, using the Puck voice, fast-paced at about 1.5x speed: タイムラインは逃げへんから。手ぇ動かそ。"
+  },
+  {
+    "key": "desk_yawn_1",
+    "text": "眠いんかい！しっかりせえ！",
+    "prompt": "Say in Japanese with a sharp Kansai tsukkomi tone, using the Puck voice, fast-paced at about 1.5x speed: 眠いんかい！しっかりせえ！"
+  },
+  {
+    "key": "desk_yawn_2",
+    "text": "ふぁ〜って、こっちまで眠なるわ。",
+    "prompt": "Say in Japanese with a playful Kansai tsukkomi tone, using the Puck voice, fast-paced at about 1.5x speed: ふぁ〜って、こっちまで眠なるわ。"
+  },
+  {
+    "key": "desk_yawn_3",
+    "text": "コーヒーでもいったら？",
+    "prompt": "Say in Japanese with a playful Kansai tsukkomi tone, using the Puck voice, fast-paced at about 1.5x speed: コーヒーでもいったら？"
+  },
+  {
+    "key": "desk_focus_achieved_1",
+    "text": "1時間集中、えらいえらい！",
+    "prompt": "Say in Japanese with a praising Kansai wrap-up tone, using the Puck voice, fast-paced at about 1.5x speed: 1時間集中、えらいえらい！"
+  },
+  {
+    "key": "desk_focus_achieved_2",
+    "text": "よう頑張った。実況席も感動やで。",
+    "prompt": "Say in Japanese with a praising Kansai wrap-up tone, using the Puck voice, fast-paced at about 1.5x speed: よう頑張った。実況席も感動やで。"
+  },
+  {
+    "key": "desk_focus_achieved_3",
+    "text": "ナイスファイト。ひと休みしよ。",
+    "prompt": "Say in Japanese with a praising Kansai wrap-up tone, using the Puck voice, fast-paced at about 1.5x speed: ナイスファイト。ひと休みしよ。"
+  },
+  {
+    "key": "desk_beat_working",
+    "text": "作業中やな。",
+    "prompt": "Say in Japanese with quick Kansai play-by-play, using the Puck voice, very short and fast at about 1.5x speed: 作業中やな。"
+  },
+  {
+    "key": "desk_beat_typing",
+    "text": "タイピングええ音。",
+    "prompt": "Say in Japanese with quick Kansai approval, using the Puck voice, very short and fast at about 1.5x speed: タイピングええ音。"
+  },
+  {
+    "key": "desk_beat_cup_watch",
+    "text": "カップ位置注意。",
+    "prompt": "Say in Japanese with quick Kansai warning, using the Puck voice, very short and fast at about 1.5x speed: カップ位置注意。"
+  },
+  {
+    "key": "desk_beat_phone_watch",
+    "text": "スマホ見てるで。",
+    "prompt": "Say in Japanese with quick Kansai observation, using the Puck voice, very short and fast at about 1.5x speed: スマホ見てるで。"
+  },
+  {
+    "key": "desk_beat_focus",
+    "text": "集中継続中。",
+    "prompt": "Say in Japanese with quick Kansai commentary, using the Puck voice, very short and fast at about 1.5x speed: 集中継続中。"
+  },
+  {
+    "key": "desk_silence_focus",
+    "text": "",
+    "prompt": "No spoken audio. This key means a deliberate short silent beat while watching the desk.",
+    "silent": true
+  }
+]

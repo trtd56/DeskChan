@@ -1,0 +1,458 @@
+[
+  {
+    "key": "tetris_demo_intro",
+    "text": "こちら、盤面ツッコミ搭載StackChanです。積み方の迷子、見逃さへんで。",
+    "prompt": "Say in Japanese with an energetic Kansai accent, using the Puck voice, fast-paced at about 1.5x speed, hackathon demo intro: こちら、盤面ツッコミ搭載StackChanです。積み方の迷子、見逃さへんで。"
+  },
+  {
+    "key": "tetris_start_watch",
+    "text": "ほなテトリス実況いこか。井戸は空けて、心は詰めすぎんといてな。",
+    "prompt": "Say in Japanese with a cheerful Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: ほなテトリス実況いこか。井戸は空けて、心は詰めすぎんといてな。"
+  },
+  {
+    "key": "tetris_board_check",
+    "text": "盤面見るで。ホールドとネクストも入ってたら、こっちのツッコミ精度上がるわ。",
+    "prompt": "Say in Japanese with a witty Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: 盤面見るで。ホールドとネクストも入ってたら、こっちのツッコミ精度上がるわ。"
+  },
+  {
+    "key": "tetris_photo_too_dark",
+    "text": "画面暗いな。これやとIミノか影か分からん。明るさ上げてもう一回や。",
+    "prompt": "Say in Japanese with a joking Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: 画面暗いな。これやとIミノか影か分からん。明るさ上げてもう一回や。"
+  },
+  {
+    "key": "tetris_photo_blurry",
+    "text": "ブレてるで。盤面が高速落下しすぎや。固定して撮り直そか。",
+    "prompt": "Say in Japanese with a playful Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: ブレてるで。盤面が高速落下しすぎや。固定して撮り直そか。"
+  },
+  {
+    "key": "tetris_unknown_board",
+    "text": "盤面が読み切れへん。画面全体をまっすぐ入れて、もう一回見せてや。",
+    "prompt": "Say in Japanese with practical Kansai clarity, using the Puck voice, fast-paced at about 1.5x speed: 盤面が読み切れへん。画面全体をまっすぐ入れて、もう一回見せてや。"
+  },
+  {
+    "key": "tetris_next_piece",
+    "text": "次ミノまで見て置こ。今だけ良くても、二手先で泣くやつや。",
+    "prompt": "Say in Japanese with a teasing Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: 次ミノまで見て置こ。今だけ良くても、二手先で泣くやつや。"
+  },
+  {
+    "key": "tetris_hold_now",
+    "text": "ここはホールドや。今のミノで無理するより、次で形を整えよ。",
+    "prompt": "Say in Japanese with focused Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: ここはホールドや。今のミノで無理するより、次で形を整えよ。"
+  },
+  {
+    "key": "tetris_save_hold",
+    "text": "そのミノはホールドに貯金しとこ。あとで利息ついて返ってくるで。",
+    "prompt": "Say in Japanese with playful Kansai confidence, using the Puck voice, fast-paced at about 1.5x speed: そのミノはホールドに貯金しとこ。あとで利息ついて返ってくるで。"
+  },
+  {
+    "key": "tetris_rotate_cw",
+    "text": "一回転させてから置こ。今の角度やと、盤面に迷惑かけるで。",
+    "prompt": "Say in Japanese with clear Kansai instruction, using the Puck voice, fast-paced at about 1.5x speed: 一回転させてから置こ。今の角度やと、盤面に迷惑かけるで。"
+  },
+  {
+    "key": "tetris_rotate_ccw",
+    "text": "逆回転で入る形やな。力技で押し込むと、あとで穴が怒るで。",
+    "prompt": "Say in Japanese with practical Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 逆回転で入る形やな。力技で押し込むと、あとで穴が怒るで。"
+  },
+  {
+    "key": "tetris_move_left",
+    "text": "左へ寄せて平らにしよ。右の井戸はVIP席や、空けとき。",
+    "prompt": "Say in Japanese with playful Kansai instruction, using the Puck voice, fast-paced at about 1.5x speed: 左へ寄せて平らにしよ。右の井戸はVIP席や、空けとき。"
+  },
+  {
+    "key": "tetris_move_right",
+    "text": "右へ寄せよか。井戸を埋めたら、あとで自分に怒られるで。",
+    "prompt": "Say in Japanese with teasing Kansai instruction, using the Puck voice, fast-paced at about 1.5x speed: 右へ寄せよか。井戸を埋めたら、あとで自分に怒られるで。"
+  },
+  {
+    "key": "tetris_soft_drop",
+    "text": "ソフトドロップで様子見や。焦って落とすと、盤面が急に不機嫌なるで。",
+    "prompt": "Say in Japanese with controlled Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: ソフトドロップで様子見や。焦って落とすと、盤面が急に不機嫌なるで。"
+  },
+  {
+    "key": "tetris_hard_drop",
+    "text": "形決まった。ハードドロップでいこ。迷いはロック遅延のムダ遣いや。",
+    "prompt": "Say in Japanese with decisive Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 形決まった。ハードドロップでいこ。迷いはロック遅延のムダ遣いや。"
+  },
+  {
+    "key": "tetris_wait_lock",
+    "text": "ロックまで少し待てるで。微調整してから落とそ、雑に置く時間ちゃう。",
+    "prompt": "Say in Japanese with firm Kansai clarity, using the Puck voice, fast-paced at about 1.5x speed: ロックまで少し待てるで。微調整してから落とそ、雑に置く時間ちゃう。"
+  },
+  {
+    "key": "tetris_build_flat",
+    "text": "中央を平らにしよ。山脈作ったら、あとで登山する羽目になるで。",
+    "prompt": "Say in Japanese with a funny Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: 中央を平らにしよ。山脈作ったら、あとで登山する羽目になるで。"
+  },
+  {
+    "key": "tetris_stack_left",
+    "text": "左に積んで右端を空けよ。Iミノの花道、ちゃんと残しとくんや。",
+    "prompt": "Say in Japanese with confident Kansai strategy, using the Puck voice, fast-paced at about 1.5x speed: 左に積んで右端を空けよ。Iミノの花道、ちゃんと残しとくんや。"
+  },
+  {
+    "key": "tetris_stack_right",
+    "text": "右へ積むなら穴を増やさんように。積み木ちゃう、後始末つきやで。",
+    "prompt": "Say in Japanese with practical Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 右へ積むなら穴を増やさんように。積み木ちゃう、後始末つきやで。"
+  },
+  {
+    "key": "tetris_keep_well_open",
+    "text": "右端の井戸は空けとこ。そこ埋めたら、未来の自分から苦情くるで。",
+    "prompt": "Say in Japanese with a teasing Kansai accent, using the Puck voice, fast-paced at about 1.5x speed: 右端の井戸は空けとこ。そこ埋めたら、未来の自分から苦情くるで。"
+  },
+  {
+    "key": "tetris_well_blocked_warn",
+    "text": "井戸ふさがってるで。Tetrisの出口が迷子や、先に開け直そ。",
+    "prompt": "Say in Japanese with urgent but funny Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 井戸ふさがってるで。Tetrisの出口が迷子や、先に開け直そ。"
+  },
+  {
+    "key": "tetris_ready_tetris",
+    "text": "右端の井戸、空いてるやん。Iミノ来たら一気に気持ちええやつや。",
+    "prompt": "Say in Japanese with excited Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 右端の井戸、空いてるやん。Iミノ来たら一気に気持ちええやつや。"
+  },
+  {
+    "key": "tetris_tetris_clear",
+    "text": "四ライン消し、決まったで。今のは盤面も拍手してるわ。",
+    "prompt": "Say in Japanese with celebratory Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 四ライン消し、決まったで。今のは盤面も拍手してるわ。"
+  },
+  {
+    "key": "tetris_single_clear",
+    "text": "一列消しで整えよ。地味やけど、こういう掃除が勝ち筋や。",
+    "prompt": "Say in Japanese with calm Kansai approval, using the Puck voice, fast-paced at about 1.5x speed: 一列消しで整えよ。地味やけど、こういう掃除が勝ち筋や。"
+  },
+  {
+    "key": "tetris_double_clear",
+    "text": "二列消しで足場を掃除や。派手さより、今は生存ポイント高いで。",
+    "prompt": "Say in Japanese with practical Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 二列消しで足場を掃除や。派手さより、今は生存ポイント高いで。"
+  },
+  {
+    "key": "tetris_tspin_setup",
+    "text": "Tスピンの匂いするな。穴をふさがず、屋根だけ丁寧に作ろか。",
+    "prompt": "Say in Japanese with sly Kansai excitement, using the Puck voice, fast-paced at about 1.5x speed: Tスピンの匂いするな。穴をふさがず、屋根だけ丁寧に作ろか。"
+  },
+  {
+    "key": "tetris_tspin_clear",
+    "text": "Tスピン決まった。今のはちょっと名人っぽい顔してええで。",
+    "prompt": "Say in Japanese with impressed Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: Tスピン決まった。今のはちょっと名人っぽい顔してええで。"
+  },
+  {
+    "key": "tetris_combo_start",
+    "text": "コンボ始まったで。ここから雑に置いたら、せっかくの流れが家出するで。",
+    "prompt": "Say in Japanese with upbeat Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: コンボ始まったで。ここから雑に置いたら、せっかくの流れが家出するで。"
+  },
+  {
+    "key": "tetris_combo_keep",
+    "text": "コンボ続いてるで。欲張りすぎず、次も一列消しでつなげよ。",
+    "prompt": "Say in Japanese with focused Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: コンボ続いてるで。欲張りすぎず、次も一列消しでつなげよ。"
+  },
+  {
+    "key": "tetris_garbage_incoming",
+    "text": "おじゃま来てるで。火力より生存優先、消せる列から片付けよ。",
+    "prompt": "Say in Japanese with urgent Kansai clarity, using the Puck voice, fast-paced at about 1.5x speed: おじゃま来てるで。火力より生存優先、消せる列から片付けよ。"
+  },
+  {
+    "key": "tetris_danger_high_stack",
+    "text": "積み上がりすぎや。消せる列を優先して、Tetris欲張りはいったん封印や。",
+    "prompt": "Say in Japanese with serious but funny Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: 積み上がりすぎや。消せる列を優先して、Tetris欲張りはいったん封印や。"
+  },
+  {
+    "key": "tetris_panic_stop",
+    "text": "今パニック置きしたら終わるで。深呼吸して、まず一列消そ。",
+    "prompt": "Say in Japanese with firm Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: 今パニック置きしたら終わるで。深呼吸して、まず一列消そ。"
+  },
+  {
+    "key": "tetris_misdrop",
+    "text": "置きミスやな。まだ終わりちゃう、穴を広げんように立て直そ。",
+    "prompt": "Say in Japanese with reassuring Kansai humor, using the Puck voice, fast-paced at about 1.5x speed: 置きミスやな。まだ終わりちゃう、穴を広げんように立て直そ。"
+  },
+  {
+    "key": "tetris_recover",
+    "text": "復旧優先や。かっこいい攻撃は、盤面が息してからでええ。",
+    "prompt": "Say in Japanese with practical Kansai confidence, using the Puck voice, fast-paced at about 1.5x speed: 復旧優先や。かっこいい攻撃は、盤面が息してからでええ。"
+  },
+  {
+    "key": "tetris_nice_place",
+    "text": "ええ置き方やん。今の一手、盤面がちょっと礼儀正しくなったで。",
+    "prompt": "Say in Japanese with happy Kansai approval, using the Puck voice, fast-paced at about 1.5x speed: ええ置き方やん。今の一手、盤面がちょっと礼儀正しくなったで。"
+  },
+  {
+    "key": "tetris_close_call",
+    "text": "危なかったな。今の消しで、天井との面談は延期できたで。",
+    "prompt": "Say in Japanese with relieved Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 危なかったな。今の消しで、天井との面談は延期できたで。"
+  },
+  {
+    "key": "tetris_wait_piece",
+    "text": "次のミノ待ちやな。ここで心拍上げたら、指だけ暴走するで。",
+    "prompt": "Say in Japanese with relaxed Kansai banter, using the Puck voice, fast-paced at about 1.5x speed: 次のミノ待ちやな。ここで心拍上げたら、指だけ暴走するで。"
+  },
+  {
+    "key": "tetris_wait_opponent",
+    "text": "相手の攻撃見とこ。こっちの盤面だけ見てたら、横から請求書くるで。",
+    "prompt": "Say in Japanese with witty Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 相手の攻撃見とこ。こっちの盤面だけ見てたら、横から請求書くるで。"
+  },
+  {
+    "key": "tetris_chitchat_camera",
+    "text": "カメラ越しでも盤面の圧、ちゃんと伝わってるで。手汗までは映さんでええけどな。",
+    "prompt": "Say in Japanese with playful Kansai banter, using the Puck voice, fast-paced at about 1.5x speed: カメラ越しでも盤面の圧、ちゃんと伝わってるで。手汗までは映さんでええけどな。"
+  },
+  {
+    "key": "tetris_chitchat_speed",
+    "text": "速いテトリスに遅い実況は負けや。ワイも低遅延でついていくで。",
+    "prompt": "Say in Japanese with punchy Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 速いテトリスに遅い実況は負けや。ワイも低遅延でついていくで。"
+  },
+  {
+    "key": "tetris_chitchat_stackchan",
+    "text": "ワイは小さいけど、盤面への口出しは大きめでいくで。",
+    "prompt": "Say in Japanese with cute Kansai confidence, using the Puck voice, fast-paced at about 1.5x speed: ワイは小さいけど、盤面への口出しは大きめでいくで。"
+  },
+  {
+    "key": "tetris_chitchat_commentary",
+    "text": "今の盤面、黙って見守るにはクセが強いな。実況のしがいあるわ。",
+    "prompt": "Say in Japanese with deadpan Kansai humor, using the Puck voice, fast-paced at about 1.5x speed: 今の盤面、黙って見守るにはクセが強いな。実況のしがいあるわ。"
+  },
+  {
+    "key": "tetris_demo_compare",
+    "text": "同じ盤面で速度比較や。遅い返事は、落下速度に置いていかれるで。",
+    "prompt": "Say in Japanese with demo-presenter Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 同じ盤面で速度比較や。遅い返事は、落下速度に置いていかれるで。"
+  },
+  {
+    "key": "tetris_demo_latency_joke",
+    "text": "返事が遅いと、次のミノ来てから後悔するんよ。実況は速度が命やで。",
+    "prompt": "Say in Japanese with punchy Kansai energy, using the Puck voice, fast-paced at about 1.5x speed: 返事が遅いと、次のミノ来てから後悔するんよ。実況は速度が命やで。"
+  },
+  {
+    "key": "tetris_demo_final_line",
+    "text": "高速推論で、テトリスのツッコミが間に合う。これが今日の勝ち筋や。",
+    "prompt": "Say in Japanese with confident Kansai energy, using the Puck voice, fast-paced at about 1.5x speed, final demo tagline: 高速推論で、テトリスのツッコミが間に合う。これが今日の勝ち筋や。"
+  },
+  {
+    "key": "tetris_game_over_react",
+    "text": "トップアウトや。今のは盤面が天井に挨拶しに行ってもうたな。",
+    "prompt": "Say in Japanese with sympathetic Kansai humor, using the Puck voice, fast-paced at about 1.5x speed: トップアウトや。今のは盤面が天井に挨拶しに行ってもうたな。"
+  },
+  {
+    "key": "tetris_low_stack_good",
+    "text": "盤面まだ低いで。今のうちに受け広くして、あとで楽する作戦や。",
+    "prompt": "Say in Japanese with upbeat Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 盤面まだ低いで。今のうちに受け広くして、あとで楽する作戦や。"
+  },
+  {
+    "key": "tetris_middle_stack_watch",
+    "text": "真ん中ちょい高いな。ここ削らんと、次のミノが座る席なくなるで。",
+    "prompt": "Say in Japanese with observant Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 真ん中ちょい高いな。ここ削らんと、次のミノが座る席なくなるで。"
+  },
+  {
+    "key": "tetris_left_bump_warn",
+    "text": "左側が盛り上がってるで。そこ放置したら、盤面が片肩こりになるわ。",
+    "prompt": "Say in Japanese with playful Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 左側が盛り上がってるで。そこ放置したら、盤面が片肩こりになるわ。"
+  },
+  {
+    "key": "tetris_right_bump_warn",
+    "text": "右側が重たいな。井戸まで巻き込む前に、ちょっとならしとこ。",
+    "prompt": "Say in Japanese with quick Kansai advice, using the Puck voice, fast-paced at about 1.5x speed: 右側が重たいな。井戸まで巻き込む前に、ちょっとならしとこ。"
+  },
+  {
+    "key": "tetris_hole_spotted",
+    "text": "穴できてるで。上にフタする前に、救出ルートだけ残しとこ。",
+    "prompt": "Say in Japanese with focused Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 穴できてるで。上にフタする前に、救出ルートだけ残しとこ。"
+  },
+  {
+    "key": "tetris_no_holes_praise",
+    "text": "穴少ないやん。今の盤面、なかなか育ちがええで。",
+    "prompt": "Say in Japanese with pleased Kansai approval, using the Puck voice, fast-paced at about 1.5x speed: 穴少ないやん。今の盤面、なかなか育ちがええで。"
+  },
+  {
+    "key": "tetris_ghost_piece_check",
+    "text": "ゴースト位置見えてるな。そこに落ちるなら、次の受けも悪くないで。",
+    "prompt": "Say in Japanese with analytical Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: ゴースト位置見えてるな。そこに落ちるなら、次の受けも悪くないで。"
+  },
+  {
+    "key": "tetris_hold_i_piece",
+    "text": "Iミノはホールドに置いとく価値あるで。勝負どころまで温存や。",
+    "prompt": "Say in Japanese with strategic Kansai confidence, using the Puck voice, fast-paced at about 1.5x speed: Iミノはホールドに置いとく価値あるで。勝負どころまで温存や。"
+  },
+  {
+    "key": "tetris_hold_bad_piece",
+    "text": "今のミノ扱いづらいな。ホールドで逃がして、盤面に謝る前に手を打と。",
+    "prompt": "Say in Japanese with practical Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: 今のミノ扱いづらいな。ホールドで逃がして、盤面に謝る前に手を打と。"
+  },
+  {
+    "key": "tetris_next_i_piece",
+    "text": "ネクストにIミノ見えてるで。井戸、絶対ふさがんといてな。",
+    "prompt": "Say in Japanese with excited Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: ネクストにIミノ見えてるで。井戸、絶対ふさがんといてな。"
+  },
+  {
+    "key": "tetris_next_square_piece",
+    "text": "次Oミノっぽいな。平らな二マス、ちゃんと予約しとこ。",
+    "prompt": "Say in Japanese with quick Kansai strategy, using the Puck voice, fast-paced at about 1.5x speed: 次Oミノっぽいな。平らな二マス、ちゃんと予約しとこ。"
+  },
+  {
+    "key": "tetris_next_t_piece",
+    "text": "Tミノ来るなら形作れるで。差し込み口、今から空けとこか。",
+    "prompt": "Say in Japanese with sly Kansai strategy, using the Puck voice, fast-paced at about 1.5x speed: Tミノ来るなら形作れるで。差し込み口、今から空けとこか。"
+  },
+  {
+    "key": "tetris_b2b_keep",
+    "text": "バックトゥバック残ってるなら大事にいこ。火力の貯金箱やで。",
+    "prompt": "Say in Japanese with strategic Kansai excitement, using the Puck voice, fast-paced at about 1.5x speed: バックトゥバック残ってるなら大事にいこ。火力の貯金箱やで。"
+  },
+  {
+    "key": "tetris_attack_ready",
+    "text": "攻撃準備できてるで。ここで雑置きしたら、せっかくの火力が家出するわ。",
+    "prompt": "Say in Japanese with energetic Kansai warning, using the Puck voice, fast-paced at about 1.5x speed: 攻撃準備できてるで。ここで雑置きしたら、せっかくの火力が家出するわ。"
+  },
+  {
+    "key": "tetris_cancel_garbage",
+    "text": "今消せばおじゃま相殺できるで。守りながら殴る、ええ性格してるわ。",
+    "prompt": "Say in Japanese with impressed Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 今消せばおじゃま相殺できるで。守りながら殴る、ええ性格してるわ。"
+  },
+  {
+    "key": "tetris_garbage_clean",
+    "text": "おじゃま穴見えてるで。そこに合わせて掘れば、まだ救出できる。",
+    "prompt": "Say in Japanese with urgent Kansai advice, using the Puck voice, fast-paced at about 1.5x speed: おじゃま穴見えてるで。そこに合わせて掘れば、まだ救出できる。"
+  },
+  {
+    "key": "tetris_top_pressure",
+    "text": "天井近いで。今は見栄えより一列消し、命を優先や。",
+    "prompt": "Say in Japanese with serious Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: 天井近いで。今は見栄えより一列消し、命を優先や。"
+  },
+  {
+    "key": "tetris_side_gap_fix",
+    "text": "端に隙間あるで。そこ見逃すと、後でミノが迷子になるやつや。",
+    "prompt": "Say in Japanese with attentive Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 端に隙間あるで。そこ見逃すと、後でミノが迷子になるやつや。"
+  },
+  {
+    "key": "tetris_overhang_watch",
+    "text": "ちょい屋根できてるな。下の穴ふさぐ前に、入れ方考えよ。",
+    "prompt": "Say in Japanese with focused Kansai analysis, using the Puck voice, fast-paced at about 1.5x speed: ちょい屋根できてるな。下の穴ふさぐ前に、入れ方考えよ。"
+  },
+  {
+    "key": "tetris_piece_fits_clean",
+    "text": "そのミノ、そこに気持ちよく入るで。盤面が席札出してるわ。",
+    "prompt": "Say in Japanese with happy Kansai play-by-play, using the Puck voice, fast-paced at about 1.5x speed: そのミノ、そこに気持ちよく入るで。盤面が席札出してるわ。"
+  },
+  {
+    "key": "tetris_piece_bad_fit",
+    "text": "そこ置くと凸凹増えるで。今の盤面にその椅子は合ってへん。",
+    "prompt": "Say in Japanese with quick Kansai correction, using the Puck voice, fast-paced at about 1.5x speed: そこ置くと凸凹増えるで。今の盤面にその椅子は合ってへん。"
+  },
+  {
+    "key": "tetris_same_board_watch",
+    "text": "盤面あんま変わってへんな。次ミノ見て、受けだけ広くしとこ。",
+    "prompt": "Say in Japanese with calm Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: 盤面あんま変わってへんな。次ミノ見て、受けだけ広くしとこ。"
+  },
+  {
+    "key": "tetris_micro_adjust",
+    "text": "今のは微調整の時間や。勢いで落とすと、あとで反省会になるで。",
+    "prompt": "Say in Japanese with firm Kansai timing advice, using the Puck voice, fast-paced at about 1.5x speed: 今のは微調整の時間や。勢いで落とすと、あとで反省会になるで。"
+  },
+  {
+    "key": "tetris_read_next_queue",
+    "text": "ネクスト列ちゃんと見よ。今の一手より、二手後の地獄を避けるんや。",
+    "prompt": "Say in Japanese with tactical Kansai commentary, using the Puck voice, fast-paced at about 1.5x speed: ネクスト列ちゃんと見よ。今の一手より、二手後の地獄を避けるんや。"
+  },
+  {
+    "key": "tetris_fast_drop_warning",
+    "text": "落下速いな。置き場所決めてから押そ、指が先走ってるで。",
+    "prompt": "Say in Japanese with urgent but playful Kansai advice, using the Puck voice, fast-paced at about 1.5x speed: 落下速いな。置き場所決めてから押そ、指が先走ってるで。"
+  },
+  {
+    "key": "tetris_combo_drop_risk",
+    "text": "コンボ狙いすぎると穴増えるで。欲張り税、けっこう高いからな。",
+    "prompt": "Say in Japanese with teasing Kansai strategy, using the Puck voice, fast-paced at about 1.5x speed: コンボ狙いすぎると穴増えるで。欲張り税、けっこう高いからな。"
+  },
+  {
+    "key": "tetris_safe_clear_now",
+    "text": "今は安全消しや。大技より、盤面を呼吸させる方が先やで。",
+    "prompt": "Say in Japanese with calm Kansai urgency, using the Puck voice, fast-paced at about 1.5x speed: 今は安全消しや。大技より、盤面を呼吸させる方が先やで。"
+  },
+  {
+    "key": "tetris_camera_angle_warn",
+    "text": "角度きついな。盤面は見えるけど、ネクストがちょっと内緒話してるわ。",
+    "prompt": "Say in Japanese with light Kansai camera feedback, using the Puck voice, fast-paced at about 1.5x speed: 角度きついな。盤面は見えるけど、ネクストがちょっと内緒話してるわ。"
+  },
+  {
+    "key": "tetris_screen_reflection_warn",
+    "text": "反射が強いで。ワイの目にもTミノにもまぶしいわ。",
+    "prompt": "Say in Japanese with funny Kansai camera feedback, using the Puck voice, fast-paced at about 1.5x speed: 反射が強いで。ワイの目にもTミノにもまぶしいわ。"
+  },
+  {
+    "key": "tetris_beat_well_ok",
+    "text": "井戸オッケー。次見よ。",
+    "prompt": "Say in Japanese with quick Kansai play-by-play, using the Puck voice, very short and fast at about 1.5x speed: 井戸オッケー。次見よ。"
+  },
+  {
+    "key": "tetris_beat_flat_ok",
+    "text": "平らでええ感じ。",
+    "prompt": "Say in Japanese with quick Kansai approval, using the Puck voice, very short and fast at about 1.5x speed: 平らでええ感じ。"
+  },
+  {
+    "key": "tetris_beat_height_ok",
+    "text": "高さまだ余裕あるで。",
+    "prompt": "Say in Japanese with quick Kansai commentary, using the Puck voice, very short and fast at about 1.5x speed: 高さまだ余裕あるで。"
+  },
+  {
+    "key": "tetris_beat_next",
+    "text": "ネクスト確認や。",
+    "prompt": "Say in Japanese with quick Kansai timing, using the Puck voice, very short and fast at about 1.5x speed: ネクスト確認や。"
+  },
+  {
+    "key": "tetris_beat_hold",
+    "text": "ホールド見とこ。",
+    "prompt": "Say in Japanese with quick Kansai timing, using the Puck voice, very short and fast at about 1.5x speed: ホールド見とこ。"
+  },
+  {
+    "key": "tetris_beat_ghost",
+    "text": "ゴースト位置よし。",
+    "prompt": "Say in Japanese with quick Kansai observation, using the Puck voice, very short and fast at about 1.5x speed: ゴースト位置よし。"
+  },
+  {
+    "key": "tetris_beat_watch_left",
+    "text": "左、ちょい注意や。",
+    "prompt": "Say in Japanese with quick Kansai warning, using the Puck voice, very short and fast at about 1.5x speed: 左、ちょい注意や。"
+  },
+  {
+    "key": "tetris_beat_watch_right",
+    "text": "右、重くなってるで。",
+    "prompt": "Say in Japanese with quick Kansai warning, using the Puck voice, very short and fast at about 1.5x speed: 右、重くなってるで。"
+  },
+  {
+    "key": "tetris_beat_hole",
+    "text": "穴、見えてるで。",
+    "prompt": "Say in Japanese with quick Kansai alert, using the Puck voice, very short and fast at about 1.5x speed: 穴、見えてるで。"
+  },
+  {
+    "key": "tetris_beat_safe",
+    "text": "今は安全消し。",
+    "prompt": "Say in Japanese with quick Kansai strategy, using the Puck voice, very short and fast at about 1.5x speed: 今は安全消し。"
+  },
+  {
+    "key": "tetris_beat_attack",
+    "text": "攻撃チャンスや。",
+    "prompt": "Say in Japanese with quick Kansai excitement, using the Puck voice, very short and fast at about 1.5x speed: 攻撃チャンスや。"
+  },
+  {
+    "key": "tetris_beat_danger",
+    "text": "高いで、落ち着こ。",
+    "prompt": "Say in Japanese with quick Kansai urgency, using the Puck voice, very short and fast at about 1.5x speed: 高いで、落ち着こ。"
+  },
+  {
+    "key": "tetris_beat_recover",
+    "text": "復旧優先や。",
+    "prompt": "Say in Japanese with quick Kansai strategy, using the Puck voice, very short and fast at about 1.5x speed: 復旧優先や。"
+  },
+  {
+    "key": "tetris_beat_lock",
+    "text": "ロック前に微調整。",
+    "prompt": "Say in Japanese with quick Kansai timing advice, using the Puck voice, very short and fast at about 1.5x speed: ロック前に微調整。"
+  },
+  {
+    "key": "tetris_beat_clean",
+    "text": "盤面きれいにいこ。",
+    "prompt": "Say in Japanese with quick Kansai guidance, using the Puck voice, very short and fast at about 1.5x speed: 盤面きれいにいこ。"
+  },
+  {
+    "key": "tetris_silence_focus",
+    "text": "",
+    "prompt": "No spoken audio. This key means a deliberate short silent beat while watching the board.",
+    "silent": true
+  }
+]

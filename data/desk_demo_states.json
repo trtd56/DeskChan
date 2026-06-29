@@ -1,0 +1,122 @@
+[
+  {
+    "state": "greeting",
+    "label": "着席あいさつ",
+    "trigger": "顔を検知（着席）",
+    "tone": "明るい・軽め",
+    "safety_level": "ok",
+    "expression": "happy",
+    "motion": "nod",
+    "intensity": 2,
+    "variants": [
+      {"key": "desk_greeting_1", "text": "お、来たな。今日も実況していくで！"},
+      {"key": "desk_greeting_2", "text": "おはようさん。今日もよろしゅう。"},
+      {"key": "desk_greeting_3", "text": "待っとったで。さあ始めよか。"}
+    ]
+  },
+  {
+    "state": "work_start",
+    "label": "作業開始",
+    "trigger": "PC前で手が動き始める",
+    "tone": "のんびり",
+    "safety_level": "ok",
+    "expression": "happy",
+    "motion": "nod",
+    "intensity": 1,
+    "variants": [
+      {"key": "desk_work_start_1", "text": "コード書き始めたな、がんばれ。"},
+      {"key": "desk_work_start_2", "text": "お、仕事モード入ったか。"},
+      {"key": "desk_work_start_3", "text": "よっしゃ、いくで。"}
+    ]
+  },
+  {
+    "state": "typing_fast",
+    "label": "高速タイピング",
+    "trigger": "タイピング高速・継続",
+    "tone": "平常〜やや上げ",
+    "safety_level": "ok",
+    "expression": "happy",
+    "motion": "bounce",
+    "intensity": 2,
+    "variants": [
+      {"key": "desk_typing_fast_1", "text": "ノってきたやん、ええ感じ。"},
+      {"key": "desk_typing_fast_2", "text": "お、手が止まらんな。調子ええで。"},
+      {"key": "desk_typing_fast_3", "text": "その勢いや！"}
+    ]
+  },
+  {
+    "state": "cup_danger",
+    "label": "カップ危険",
+    "trigger": "マグカップが机の端／PC付近",
+    "tone": "焦り・テンション高",
+    "safety_level": "warn",
+    "expression": "surprised",
+    "motion": "shake",
+    "intensity": 3,
+    "variants": [
+      {"key": "desk_cup_danger_1", "text": "あー！カップ危ない！こぼれるって！"},
+      {"key": "desk_cup_danger_2", "text": "ストップストップ！それこぼすやつ！"},
+      {"key": "desk_cup_danger_3", "text": "奥や奥！カップ奥に置き！"}
+    ]
+  },
+  {
+    "state": "phone_pickup",
+    "label": "スマホを取る",
+    "trigger": "スマホを手に取る",
+    "tone": "軽い・様子見",
+    "safety_level": "ok",
+    "expression": "neutral",
+    "motion": "tilt_left",
+    "intensity": 1,
+    "variants": [
+      {"key": "desk_phone_pickup_1", "text": "お、スマホ触ったな。"},
+      {"key": "desk_phone_pickup_2", "text": "ん？スマホ登場か。"},
+      {"key": "desk_phone_pickup_3", "text": "お休憩入ります？"}
+    ]
+  },
+  {
+    "state": "phone_overuse",
+    "label": "スマホ長すぎ",
+    "trigger": "スマホ継続（一定時間超）",
+    "tone": "お節介・強め",
+    "safety_level": "warn",
+    "expression": "serious",
+    "motion": "shake",
+    "intensity": 2,
+    "variants": [
+      {"key": "desk_phone_overuse_1", "text": "触りすぎちゃう？Xばっか見とらんと、仕事仕事！"},
+      {"key": "desk_phone_overuse_2", "text": "もう何分見とんねん。そろそろ戻ってこい。"},
+      {"key": "desk_phone_overuse_3", "text": "タイムラインは逃げへんから。手ぇ動かそ。"}
+    ]
+  },
+  {
+    "state": "yawn",
+    "label": "あくび",
+    "trigger": "あくびを検知",
+    "tone": "ツッコミ",
+    "safety_level": "ok",
+    "expression": "sleepy",
+    "motion": "tilt_right",
+    "intensity": 2,
+    "variants": [
+      {"key": "desk_yawn_1", "text": "眠いんかい！しっかりせえ！"},
+      {"key": "desk_yawn_2", "text": "ふぁ〜って、こっちまで眠なるわ。"},
+      {"key": "desk_yawn_3", "text": "コーヒーでもいったら？"}
+    ]
+  },
+  {
+    "state": "focus_achieved",
+    "label": "集中達成",
+    "trigger": "長時間集中を達成",
+    "tone": "称賛・締め",
+    "safety_level": "ok",
+    "expression": "happy",
+    "motion": "bounce",
+    "intensity": 2,
+    "variants": [
+      {"key": "desk_focus_achieved_1", "text": "1時間集中、えらいえらい！"},
+      {"key": "desk_focus_achieved_2", "text": "よう頑張った。実況席も感動やで。"},
+      {"key": "desk_focus_achieved_3", "text": "ナイスファイト。ひと休みしよ。"}
+    ]
+  }
+]

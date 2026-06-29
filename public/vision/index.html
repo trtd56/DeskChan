@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeskChan Vision Test</title>
+    <link rel="stylesheet" href="/styles.css?v=no-visitor-1" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="camera-pane">
+        <div class="topbar">
+          <div>
+            <h1>DeskChan Vision</h1>
+            <p id="status">待機中</p>
+          </div>
+          <div class="actions">
+            <button id="pauseButton" type="button" title="一時停止">⏸</button>
+            <button id="refreshButton" type="button" title="更新">↻</button>
+          </div>
+        </div>
+        <div class="viewer">
+          <img id="cameraImage" alt="StackChan camera" />
+          <div id="viewerState" class="viewer-state">接続中</div>
+        </div>
+      </section>
+
+      <aside class="control-pane">
+        <label>
+          <span>StackChan</span>
+          <input id="stackchanUrl" value="http://192.168.11.15" />
+        </label>
+        <label>
+          <span>Audio</span>
+          <input id="audioBaseUrl" value="http://192.168.0.10:8787" />
+        </label>
+        <label>
+          <span>Scene</span>
+          <select id="scene">
+            <option value="desk" selected>Desk work</option>
+            <option value="tetris">Tetris</option>
+          </select>
+        </label>
+        <label>
+          <span>Provider</span>
+          <select id="provider">
+            <option value="gemini" selected>Gemini Flash-Lite</option>
+            <option value="mock">Mock</option>
+            <option value="cerebras">Cerebras/Gemma 4</option>
+          </select>
+        </label>
+        <label>
+          <span>Prompt</span>
+          <textarea id="prompt" rows="7">StackChanのカメラ画像を見て、卓上作業の実況として次の一言を返して。手元、キーボード、PC、マグカップ、スマホ、姿勢、離席、照明、散らかり具合を読む。カップが端やPCに近い時、手の通り道にある時、暗い時は短く注意する。同じ認識結果が続く時は同じ発話を避ける。スマホ継続だけは「スマホ長すぎ」に切り替え、それ以外の連続状態は雑談にする。</textarea>
+        </label>
+        <label class="check-row">
+          <input id="sendToStackChan" type="checkbox" checked />
+          <span>StackChanへ送信</span>
+        </label>
+        <label class="check-row">
+          <input id="playInBrowser" type="checkbox" />
+          <span>PC音声プレビュー</span>
+        </label>
+        <button id="audioUnlockButton" type="button">PC音声有効化</button>
+        <label class="check-row">
+          <input id="useHistory" type="checkbox" checked />
+          <span>前後関係を使う</span>
+        </label>
+        <button id="analyzeButton" class="primary" type="button">認識する</button>
+        <section class="auto-run">
+          <div class="section-head">
+            <h2>画像認識デモ</h2>
+            <span id="demoState" class="demo-state">停止中</span>
+            <label>
+              <span>間隔</span>
+              <select id="autoInterval">
+                <option value="1">1秒</option>
+                <option value="1.5">1.5秒</option>
+                <option value="2" selected>2秒</option>
+                <option value="3">3秒</option>
+                <option value="4">4秒</option>
+                <option value="5">5秒</option>
+                <option value="10">10秒</option>
+                <option value="15">15秒</option>
+                <option value="20">20秒</option>
+                <option value="30">30秒</option>
+                <option value="45">45秒</option>
+              </select>
+            </label>
+          </div>
+          <div class="demo-controls">
+            <button id="demoStartButton" type="button">認識開始</button>
+            <button id="demoStopButton" type="button" disabled>認識停止</button>
+          </div>
+        </section>
+
+        <section class="script-demo">
+          <div class="section-head">
+            <h2>台本デモ</h2>
+            <span id="scriptState" class="demo-state">停止中</span>
+            <label>
+              <span>間隔</span>
+              <select id="scriptInterval">
+                <option value="2">2秒</option>
+                <option value="3" selected>3秒</option>
+                <option value="4">4秒</option>
+                <option value="5">5秒</option>
+                <option value="8">8秒</option>
+              </select>
+            </label>
+          </div>
+          <div class="demo-controls">
+            <button id="scriptStartButton" type="button">台本開始</button>
+            <button id="scriptStopButton" type="button" disabled>台本停止</button>
+          </div>
+          <div class="script-table-wrap">
+            <table id="scriptTable">
+              <thead>
+                <tr>
+                  <th>状態</th>
+                  <th>トリガー</th>
+                  <th>セリフ</th>
+                  <th>トーン</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="5">読み込み中</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="result">
+          <div class="result-grid">
+            <div>
+              <span>判定</span>
+              <strong id="phase">-</strong>
+            </div>
+            <div>
+              <span>警戒</span>
+              <strong id="safety">-</strong>
+            </div>
+            <div>
+              <span>音声</span>
+              <strong id="audioKey">-</strong>
+            </div>
+            <div>
+              <span>遅延</span>
+              <strong id="latency">-</strong>
+            </div>
+          </div>
+          <p id="reply" class="reply">認識結果がここに出ます。</p>
+        </section>
+
+        <section class="history">
+          <div class="section-head">
+            <h2>履歴</h2>
+            <button id="resetHistoryButton" type="button">リセット</button>
+          </div>
+          <ol id="historyList"></ol>
+        </section>
+
+        <details open>
+          <summary>JSON</summary>
+          <pre id="jsonOutput">{}</pre>
+        </details>
+      </aside>
+    </main>
+    <script src="/app.js?v=no-visitor-1"></script>
+  </body>
+</html>

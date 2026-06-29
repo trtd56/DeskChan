@@ -1,0 +1,48 @@
+[
+  {
+    "key": "start_cooking",
+    "text": "ほな始めよか。今日の段取り、ワイが見といたるわ。",
+    "prompt": "[cheerful, friendly Kansai Japanese accent] ほな始めよか。今日の段取り、ワイが見といたるわ。"
+  },
+  {
+    "key": "stir_now",
+    "text": "今や、混ぜて。ここでサボったらダマだらけ選手権優勝やで。",
+    "prompt": "[mischievously, upbeat Kansai Japanese accent] 今や、混ぜて。ここでサボったらダマだらけ選手権優勝やで。"
+  },
+  {
+    "key": "lower_heat",
+    "text": "火ぃ強いな。中弱火に落とし。焦げたらワイのせいにされるやろ。",
+    "prompt": "[slightly panicked but playful, Kansai Japanese accent] 火ぃ強いな。中弱火に落とし。焦げたらワイのせいにされるやろ。"
+  },
+  {
+    "key": "timer_set",
+    "text": "タイマー入れたで。ここからは忍耐や。つまみ食いはまだ早い。",
+    "prompt": "[firm but warm, Kansai Japanese accent] タイマー入れたで。ここからは忍耐や。つまみ食いはまだ早い。"
+  },
+  {
+    "key": "taste_check",
+    "text": "味見してみ。薄かったら足せるけど、濃すぎたら会議やで。",
+    "prompt": "[casual, teasing Kansai Japanese accent] 味見してみ。薄かったら足せるけど、濃すぎたら会議やで。"
+  },
+  {
+    "key": "knife_safety",
+    "text": "包丁いくで。指は猫の手、スマホは置いとき。そこだけは真面目や。",
+    "prompt": "[serious then friendly, Kansai Japanese accent] 包丁いくで。指は猫の手、スマホは置いとき。そこだけは真面目や。"
+  },
+  {
+    "key": "good_smell",
+    "text": "ええ匂いやん。ここまで来たら、あとは調子に乗りすぎんことやな。",
+    "prompt": "[pleased, playful Kansai Japanese accent] ええ匂いやん。ここまで来たら、あとは調子に乗りすぎんことやな。"
+  },
+  {
+    "key": "plate_now",
+    "text": "盛り付けよか。雑に置いたら、うまいもんも部活の弁当みたいになるで。",
+    "prompt": "[mischievously, upbeat Kansai Japanese accent] 盛り付けよか。雑に置いたら、うまいもんも部活の弁当みたいになるで。"
+  },
+  {
+    "key": "done",
+    "text": "完成や。これはなかなかええやん。ちょっと見直したで。",
+    "prompt": "[happy, approving Kansai Japanese accent] 完成や。これはなかなかええやん。ちょっと見直したで。"
+  }
+]
+
