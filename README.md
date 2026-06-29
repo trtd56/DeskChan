@@ -1,4 +1,4 @@
-# Gemma 4 Hackathon Notes
+# DeskChan
 
 このリポジトリは、Cerebras と Google DeepMind による **Gemma 4 24-Hour Hackathon** 用の作業場所です。
 
@@ -31,13 +31,13 @@ cp .env.example .env
 APIキーなしで構造を確認:
 
 ```bash
-kitchen-chan turn "マグカップがPCの近くにある。短く実況して" --scene desk --provider mock
+deskchan turn "マグカップがPCの近くにある。短く実況して" --scene desk --provider mock
 ```
 
 卓上実況UIをローカルで開く:
 
 ```bash
-kitchen-chan bridge --host 0.0.0.0 --port 8787
+deskchan bridge --host 0.0.0.0 --port 8787
 ```
 
 ブラウザで `http://localhost:8787/` を開きます。
@@ -53,7 +53,7 @@ kitchen-chan bridge --host 0.0.0.0 --port 8787
 StackChanブリッジにJSONをPOSTする場合:
 
 ```bash
-kitchen-chan turn "スマホを手に取った。短く実況して" \
+deskchan turn "スマホを手に取った。短く実況して" \
   --scene desk \
   --provider mock \
   --stackchan-url http://stackchan.local/action
@@ -63,7 +63,7 @@ Gemini Flash-Liteでテスト:
 
 ```bash
 export GEMINI_API_KEY=...
-kitchen-chan turn "StackChanのカメラ画像を見て、卓上作業を実況して" \
+deskchan turn "StackChanのカメラ画像を見て、卓上作業を実況して" \
   --scene desk \
   --provider gemini \
   --stackchan-camera-url http://192.168.11.15
@@ -73,7 +73,7 @@ Cerebras/Gemma 4で本番比較:
 
 ```bash
 export CEREBRAS_API_KEY=...
-kitchen-chan compare "カップが机の端に近い。短く実況して" --scene desk --left gemini --right cerebras
+deskchan compare "カップが机の端に近い。短く実況して" --scene desk --left gemini --right cerebras
 ```
 
 ブラウザUIの `Provider` で `Cerebras/Gemma 4` を選ぶ場合も `CEREBRAS_API_KEY` が必要です。カメラ画像はOpenAI互換のマルチモーダル形式で、Base64 data URI の `image_url` として `gemma-4-31b` に直接送ります。
@@ -113,7 +113,7 @@ pio run -t upload --upload-port /dev/cu.usbmodem1101
 接続候補を確認:
 
 ```bash
-kitchen-chan device discover
+deskchan device discover
 ```
 
 現在確認できた候補:
@@ -125,7 +125,7 @@ kitchen-chan device discover
 HTTP APIを探す:
 
 ```bash
-kitchen-chan device probe --url http://192.168.11.15
+deskchan device probe --url http://192.168.11.15
 ```
 
 2026-06-28時点の確認では、`/action`, `/speak`, `/api/action` など一般的な直接制御エンドポイントはすべて `404 {"ok":false,"message":"not found"}` でした。接続中の公式ファームは、PCからHTTPで直接操作するAPIではなく、アプリ/クラウド側へWebSocket接続する設計の可能性が高いです。
@@ -133,7 +133,7 @@ kitchen-chan device probe --url http://192.168.11.15
 USBシリアルに試験パケットを送る:
 
 ```bash
-kitchen-chan device send "デモ紹介して" \
+deskchan device send "デモ紹介して" \
   --scene desk \
   --provider mock \
   --transport serial \
@@ -143,19 +143,19 @@ kitchen-chan device send "デモ紹介して" \
 シリアルログを見る:
 
 ```bash
-kitchen-chan device read-serial --port /dev/cu.usbmodem1101 --seconds 5
+deskchan device read-serial --port /dev/cu.usbmodem1101 --seconds 5
 ```
 
 ローカルブリッジでアクションJSONを試す:
 
 ```bash
-kitchen-chan bridge --host 0.0.0.0 --port 8787
+deskchan bridge --host 0.0.0.0 --port 8787
 ```
 
 別ターミナルから送信:
 
 ```bash
-kitchen-chan device send "待ち時間に雑談して" \
+deskchan device send "待ち時間に雑談して" \
   --scene desk \
   --provider mock \
   --transport http \

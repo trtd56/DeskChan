@@ -21,7 +21,7 @@ from .stackchan import (
 
 def main() -> None:
     load_dotenv()
-    parser = argparse.ArgumentParser(prog="kitchen-chan")
+    parser = argparse.ArgumentParser(prog="deskchan")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     turn = subparsers.add_parser("turn", help="Run one commentary turn.")

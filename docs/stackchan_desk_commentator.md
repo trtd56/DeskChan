@@ -127,7 +127,7 @@ python -m kitchen_chan.tts --input data/desk_voice_lines.json --out public/audio
 - Run the bridge:
 
 ```bash
-kitchen-chan bridge --host 0.0.0.0 --port 8787
+deskchan bridge --host 0.0.0.0 --port 8787
 ```
 
 - Open `http://localhost:8787/`, choose `Desk work`, and start auto demo.
